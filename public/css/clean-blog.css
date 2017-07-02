@@ -424,6 +424,7 @@ body {
 .hiden_arrow{
     position: fixed;
     top: 15px;
+    left:100px;
 }
 #arrow{
     z-index: 3;
