@@ -65,7 +65,7 @@
     </header>
 <script>
 $('#arrow').click(function(){
-    if($('#intro-header').hasClass('hiden_header')){        
+    if($('#intro-header').hasClass('hiden_header') && $('#intro-header').height() == 50 ){        
         $('#hidden_title').toggle("fast");
         $('.intro-header').animate({height: '+=426px',width: 'auto'},1000,function(){
             $('.intro-header').removeClass('hiden_header');
@@ -73,7 +73,7 @@ $('#arrow').click(function(){
             $('#arrow').addClass('glyphicon-menu-up');
             $('#arrow').removeClass('hiden_arrow');
         });        
-    }else{
+    }else if ($('#intro-header').height() == 476 ){
         $('.intro-header').animate({height: '-=426px',width: '102%'},1000,function(){
             $('.intro-header').addClass('hiden_header');
             $('#arrow').removeClass('glyphicon-menu-up');
